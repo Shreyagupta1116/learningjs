@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script>
+      function validate()
+      {
+        var mobile = document.getElementById("mobile").value;
+        if ( isNaN(mobile) || mobile.length!=10) {
+          alert("Invalid Number");
+          return false;
+        }
+        else
+          return true;
+      }
+    </script>
+  </head>
+  <body>
+    <form action="mobvalidation.html" method="post" onsubmit="return validate()">
+      <br>Mobile: <input type="text" id="mobile">
+      <br><input type="submit">
+    </form>
+  </body>
+</html>
